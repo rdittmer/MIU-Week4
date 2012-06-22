@@ -1,0 +1,246 @@
+<!doctype html>
+
+<!--Ryan Dittmer
+	Week 3
+	MIU 1206      -->
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="cleartype" content="on">
+<title>Index</title>
+<link href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.5.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div data-role="page" id="index">
+  <div data-role="header">
+    <h1>Tee Time Tracker - Bronze</h1>
+  </div>
+  <div data-role="content"></div>
+  <a href="additem.html" data-ajax="false"><img src="img/golf1.png" align="absmiddle" hspace="15%"/></a>
+  <a href="newsStream" data-role="button" data-inset="true">Upcoming Tee Times</a>
+  <div data-role="fieldcontain">
+    <input type="search" name="searchInput" id="searchInput" value=""/>
+  </div>
+  
+  <div class="ui-grid-a">
+	<div class="ui-block-a"><a href="#course1"><img src="img/course1.png" hspace="20%"/></a>
+    								   <a href="#course3"><img src="img/course3.png" hspace="20%"/></a>
+                                       <a href="#course5"><img src="img/course5.png" hspace="20%"/></a>
+                                       </div>
+	<div class="ui-block-b"><a href="#course2"><img src="img/course2.png" hspace="20%"/></a>
+    								   <a href="#course4"><img src="img/course4.png" hspace="20%"/></a></div>
+  </div>
+  
+<div data-role="footer">
+
+	<h1>  </h1>
+    
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+</div>
+
+<div data-role="page" id="comingSoon" data-backbtn="true">
+<div data-role="header">
+	<h1>Coming Soon</h1>
+</div>
+
+<div data-role="content">
+<h1>Under Construction</h1>
+</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h1>  </h1>
+   	    <div data-role="navbar">
+			<ul>
+				<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+				<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+			</ul>
+		</div>
+  </div>
+</div>
+
+<ul data-role="page" id="course1">
+	 <div data-role="header" data-backbtn="true">
+     <h1>Course 1</h1>
+     </div>
+	<div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+   	    <li data-icon="info"><h2>Jack Terry - 06/20/2012</h2><a href="#comingSoon"></a></li>
+   	    <li data-icon="info"><h2>Jerry Malk - 06/11/2012</h2><a href="#comingSoon"></a></li>
+    	<li data-icon="info"><h2>Sherry Mcdonald - 06/27/2012</h2><a href="#comingSoon"></a></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course2">
+	 <div data-role="header" data-backbtn="true">
+     <h1>Course 2</h1>
+     </div>
+     
+     <div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+        <li data-icon="info"><h2>Chuck Jear - 06/13/2012</h2><a href="#comingSoon"></a></li>
+   	    <li data-icon="info"><h2>Jim Pear - 06/08/2012</h2><a href="#comingSoon"></a></li>
+    	<li data-icon="info"><h2>Will Crameck - 06/05/2012</h2><a href="#comingSoon"></a></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course3">
+	 <div data-role="header" data-backbtn="true">
+     <h1>Course 3</h1>
+     </div>
+     
+     <div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+        <li data-icon="info"><h2>Alex Gourd - 06/14/2012</h2><a href="#comingSoon"></a></li>
+   	    <li data-icon="info"><h2>Berry Igram - 06/03/2012</h2><a href="#comingSoon"></a></li>
+    	<li data-icon="info"><h2>Kay Liemer - 06/18/2012</h2><a href="#comingSoon"></a></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course4">
+	 <div data-role="header" data-backbtn="true">
+     <h1>Course 4</h1>
+     </div>
+     
+     <div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+        <li data-icon="info"><h2>Eric Cloud - 06/25/2012</h2><a href="#comingSoon"></a></li>
+   	    <li data-icon="info"><h2>Kevin Orga - 06/22/2012</h2><a href="#comingSoon"></a></li>
+    	<li data-icon="info"><h2>Mohammed Sherik - 06/15/2012</h2><a href="#comingSoon"></a></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course5">
+	 <div data-role="header" data-backbtn="true">
+     <h1>Course 5</h1>
+     </div>
+     
+	<div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+   	    <li data-icon="info"><h2>Perry Wrinkler - 06/18/2012</h2><a href="#comingSoon"></a></li>
+    	<li data-icon="info"><h2>Stanley Graham - 06/09/2012</h2><a href="#comingSoon"></a></li>
+        <li data-icon="info"><h2>Tim Caldwell - 06/02/2012</h2><a href="#comingSoon"></a></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="newsStream">
+	<div data-role="header" data-backbtn="true">
+		<h1>Upcoming Tee Times</h1>
+	</div>
+    
+    <div data-role="content">
+    	<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+   	    <li data-icon="info"><h2>Tim Caldwell - 06/02/2012</h2><a href="#comingSoon"></a></li>
+    	<li data-icon="info"><h2>Berry Igram - 06/03/2012</h2><a href="#comingSoon"></a></li>
+        <li data-icon="info"><h2>Will Crameck - 06/05/2012</h2><a href="#comingSoon"></a></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+
+</ul>
+
+</body>
+
+
+</html>

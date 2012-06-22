@@ -1,0 +1,51 @@
+<!doctype html>
+
+<!--Ryan Dittmer
+	Week 1
+	MIU 1206      -->
+
+<html>
+	<head>
+		<!-- Character Set Meta -->
+		<meta charset="utf-8"/>
+		<meta name="keywords"    content="golf, tee time, tracker"/>
+		<meta name="description" content="Keep track of tee times"/>
+		<meta name="robots"      content="noindex, nofollow"/>
+		<meta name="viewport"    content="user-scalable=no, width=device-width"/>
+		<meta name="viewport"    content="target-densitydpi=device-dpi"/>
+		<link href="styles.css"   rel="stylesheet"/>
+		<title>Tee Time Tracker</title>
+	</head>
+	<body>
+		<h1>Tee Time Tracker</h1>
+		<p>Fill in the information below and click submit to add the Tee Time to the tracker.</p>
+		<form action ="#" method="post" id="teeForm">
+			<fieldset id="fieldId">
+				<legend>Add A Tee Time</legend>
+					<ul id="errors"></ul>
+					<ul>
+					<li id="options"><label for="options">Course:</label></li>
+					<li><h2>Game info:</h2></li>
+					<li><label for="reservist">Reservist:</label><input type="text" id="reservist"/></li>
+					<li><label for="numberGames">Number of Games:<input type="range" min="1" max="10" id="numberGames"/></li>
+					<li><span>Location:</span></li>
+						<ul>
+					    <li><input type="radio" name="gamePlace" id="front9" value="Front 9"/><label for="front9">Front 9</label></li>
+					    <li><input type="radio" name="gamePlace" id="back9" value="Back 9"/><label for="back9">Back 9</label></li>
+					    <li><input type="radio" name="gamePlace" id="all18" value="All 18"/><label for="all18">All 18</label></li>
+					    </ul> 
+					<li><label for="gameDate">Date:</label><input type="date" id="gameDate"/></li>
+					<li><label for="notes">Notes:</label><textarea id="notes"></textarea></li>
+					</ul>
+			</fieldset>
+			<input type="submit" value="Submit Tee Time" id="submit"/>
+		</form>
+		<nav>
+			<a href="#" id="clear">Clear stored data</a>
+			<a href="#" id="displayData">Display data</a>
+			<a href="additem.html" id="addNew" style="display:none;">Add new Tee Time</a>
+		</nav>
+		<script src="json.js"  type="text/javascript"></script>
+		<script src="main.js" type="text/javascript"></script>
+	</body>
+</html>

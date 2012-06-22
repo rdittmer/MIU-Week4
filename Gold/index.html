@@ -1,0 +1,310 @@
+<!doctype html>
+
+<!--Ryan Dittmer
+	Week 3
+	MIU 1206      -->
+
+<html>
+<head>
+	<title>Tee Time Tracker</title>
+		<meta name="description" content="Add Tee Times to a list to view upcoming customer tee times." />
+		<meta name="keywords" content="tee, times, golf, course" />
+		<meta name="robots" content="index, follow" />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320"/>
+		<meta charset="utf-8" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+<script src="js/libs/modernizr.custom.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="index">
+  <div data-role="header">
+    <h1>Tee Time Tracker - Gold</h1>
+  </div>
+  <div data-role="content"></div>
+  <a href="#additem"><img src="img/golf1.png" align="absmiddle" hspace="15%"/></a>
+  <a href="#newsStream" data-role="button" data-inset="true">Upcoming Tee Times</a>
+  <div data-role="fieldcontain">
+    <input type="search" name="searchInput" id="searchInput" value=""/>
+  </div>
+  
+  <ul data-role="listview" data-inset="true">
+    <li data-role="list-divider"><h2>Browse</h2></li>
+    <li><a href="#course1"><h1 align="center">Course 1</h1><img src="img/course1.png" /></a></li>
+    <li><a href="#course2"><h1 align="center" >Course 2</h1><img src="img/course2.png"/></a></li>
+    <li><a href="#course3"><h1 align="center" >Course 3</h1><img src="img/course3.png"/></a></li>
+    <li><a href="#course4"><h1 align="center" >Course 4</h1><img src="img/course4.png"/></a></li>
+    <li><a href="#course5"><h1 align="center" >Course 5</h1><img src="img/course5.png"/></a></li>
+    
+  </ul>
+  
+<div data-role="footer">
+
+	<h1>  </h1>
+    
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+</div>
+
+<div data-role="page" id="comingSoon" data-add-back-btn="true">
+<div data-role="header">
+	<h1>Coming Soon</h1>
+</div>
+
+<div data-role="content">
+<h1>Under Construction</h1>
+</div>
+
+	<div data-role="footer" data-position="fixed">
+		<h1>  </h1>
+   	    <div data-role="navbar">
+			<ul>
+				<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+				<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html">Bronze App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week2/Gold/index.htm">Gh-Pages</a></li>
+			</ul>
+		</div>
+  </div>
+</div>
+
+<ul data-role="page" id="course1" data-add-back-btn="true">
+	 <div data-role="header">
+     <h1>Course 1</h1>
+     </div>
+     
+     <div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Jack Terry - 06/20/2012</h2><p>Coming soon</p></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Jerry Malk - 06/11/2012</h2><p>Coming soon</p></li>
+    	<li data-role="collapsible" data-collapsed="true"><h2>Sherry Mcdonald - 06/27/2012</h2><p>Coming soon</p></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course2" data-add-back-btn="true">
+	 <div data-role="header" >
+     <h1>Course 2</h1>
+     </div>
+     
+	<div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+        <li data-role="collapsible" data-collapsed="true"><h2>Chuck Jear - 06/13/2012</h2><p>Coming soon</p></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Jim Pear - 06/08/2012</h2><p>Coming soon</p></li>
+    	<li data-role="collapsible" data-collapsed="true"><h2>Will Crameck - 06/05/2012</h2><p>Coming soon</p></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course3" data-add-back-btn="true">
+	 <div data-role="header" >
+     <h1>Course 3</h1>
+     </div>
+	<div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+       <li data-role="collapsible" data-collapsed="true"><h2>Alex Gourd - 06/14/2012</h2><p>Coming soon</p></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Berry Igram - 06/03/2012</h2><p>Coming soon</p></li>
+    	<li data-role="collapsible" data-collapsed="true"><h2>Kay Liemer - 06/18/2012</h2><p>Coming soon</p></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course4" data-add-back-btn="true">
+	 <div data-role="header" >
+     <h1>Course 4</h1>
+     </div>
+	<div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+        <li data-role="collapsible" data-collapsed="true"><h2>Eric Cloud - 06/25/2012</h2><p>Coming soon</p></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Kevin Orga - 06/22/2012</h2><p>Coming soon</p></li>
+    	<li data-role="collapsible" data-collapsed="true"><h2>Mohammed Sherik - 06/15/2012</h2><p>Coming soon</p></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="course5" data-add-back-btn="true">
+	 <div data-role="header">
+     <h1>Course 5</h1>
+     </div>
+     
+     <div data-role="content">
+		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Perry Wrinkler - 06/18/2012</h2><p>Coming soon</p></li>
+    	<li data-role="collapsible" data-collapsed="true"><h2>Stanley Graham - 06/09/2012</h2><p>Coming soon</p></li>
+        <li data-role="collapsible" data-collapsed="true"><h2>Tim Caldwell - 06/02/2012</h2><p>Coming soon</p></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+</ul>
+
+<ul data-role="page" id="newsStream" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Upcoming Tee Times</h1>
+	</div>
+    
+    <div data-role="content">
+    	<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
+   	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
+   	    <li data-role="collapsible" data-collapsed="true"><h2>Tim Caldwell - 06/02/2012</h2><p>Coming soon</p></li>
+    	<li data-role="collapsible" data-collapsed="true"><h2>Berry Igram - 06/03/2012</h2><p>Coming soon</p></li>
+        <li data-role="collapsible" data-collapsed="true"><h2>Will Crameck - 06/05/2012</h2><p>Coming soon</p></li>
+    	</ul>
+    </div>
+    
+    <div data-role="footer" data-position="fixed">
+	<h1>  </h1>
+    <div data-role="navbar">
+		<ul>
+			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
+			<li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Bronze App</a></li>
+            <li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gh-Pages</a></li>
+		</ul>
+	</div>
+
+  </div>
+
+
+</ul>
+
+<div data-role="page" id="additem" data-add-back-btn="true" >
+	<div data-role="header">
+		<h1>Add Tee Time</h1>
+    </div>
+    
+    <div data-role="content">
+        	<form action="" method="post" id="teeForm">
+                      <div data-role="fieldcontain" class="formfield">
+                	    <label for="Options" class="select">Options:</label>
+                	    <select name="Options" id="Options" class="required">
+                          <option data-placeholder="true">Select a Course</option>
+                	      <option value="course1">Course 1</option>
+                	      <option value="course2">Course 2</option>
+                	      <option value="course3">Course 3</option>
+                          <option value="course4">Course 4</option>
+                          <option value="course5">Course 5</option>
+              	        </select>
+              	      </div>
+                      
+                      <div data-role="fieldcontain" class="formfield">
+                      	<label for="reservist">Reservist:</label>
+                      	<input type="text" name="reservist" id="reservist" value="" placeholder="Enter Reservist Name" class="required"/>
+                      </div>
+                      
+                      <div data-role="fieldcontain" class="formfield">
+                      	<label for="numberGames">Number of Games:</label>
+                        <input type="range" name="numberGames" id="numberGames" value="1" min="1" max="10" />
+                      </div>
+                      
+                      <div data-role="fieldcontain" class="formfield">
+                      	<fieldset data-role="controlgroup">
+                        	<legend>Location:</legend>
+                            <input type="radio" value="Front 9" name="location" id="front9" />
+                            <label for="front9">Front 9</label>
+                            <input type="radio" value="Back 9" name="location" id="back9" />
+                            <label for="back9">Back 9</label>
+                            <input type="radio" value="All 18" name="location" id="all18" checked="checked" />
+                            <label for="all18">All 18</label>
+                        </fieldset>
+                      </div>
+                      
+                     <div data-role="fieldcontain" class="formfield">
+                      	<label for="date">Date:</label>
+                      	<input type="date" name="date" id="date" placeholder="mm/dd/yy"/>
+                      </div>
+                    
+                     <div data-role="fieldcontain" class="formfield">
+                    	<label for="notes">Notes:</label>
+                        <textarea id="notes" name="notes" placeholder="Insert notes or special requests"></textarea>
+                    </div>
+                	<div data-role="fieldcontain">
+					<input type="submit" value="Submit" id="submit"/>
+                    </div>
+    </div>
+</div>
+
+</body>
+
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js" type="text/javascript"></script>
+<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+
+</html>
