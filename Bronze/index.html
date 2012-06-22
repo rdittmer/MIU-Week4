@@ -1,7 +1,7 @@
 <!doctype html>
 
 <!--Ryan Dittmer
-	Week 3
+	Week 4
 	MIU 1206      -->
 
 <html>
@@ -10,21 +10,21 @@
 <meta http-equiv="cleartype" content="on">
 <title>Index</title>
 <link href="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.css" rel="stylesheet" type="text/css" />
-<link rel="stylesheet" href="css/styles.css" type="text/css" />
+<link rel="stylesheet" href="styles.css" type="text/css" />
 <script src="http://code.jquery.com/jquery-1.5.min.js" type="text/javascript"></script>
 <script src="http://code.jquery.com/mobile/1.0a3/jquery.mobile-1.0a3.min.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div data-role="page" id="index">
-  <div data-role="header">
-    <h1>Tee Time Tracker - Bronze</h1>
+  <div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Tee Time Tracker - Bronze</h3>
   </div>
   <div data-role="content"></div>
   <a href="additem.html" data-ajax="false"><img src="img/golf1.png" align="absmiddle" hspace="15%"/></a>
-  <a href="newsStream" data-role="button" data-inset="true">Upcoming Tee Times</a>
+  <a href="newsStream" data-role="button" data-inset="true" data-theme="e">Upcoming Tee Times</a>
   <div data-role="fieldcontain">
-    <input type="search" name="searchInput" id="searchInput" value=""/>
+    <input type="search" name="searchInput" id="searchInput" value="" data-theme="e"/>
   </div>
   
   <div class="ui-grid-a">
@@ -43,8 +43,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
@@ -52,9 +52,9 @@
 </div>
 
 <div data-role="page" id="comingSoon" data-backbtn="true">
-<div data-role="header">
-	<h1>Coming Soon</h1>
-</div>
+<div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Coming Soon</h3>
+  </div>
 
 <div data-role="content">
 <h1>Under Construction</h1>
@@ -65,17 +65,17 @@
    	    <div data-role="navbar">
 			<ul>
 				<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-				<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-        	    <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+				<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 			</ul>
 		</div>
   </div>
 </div>
 
-<ul data-role="page" id="course1">
-	 <div data-role="header" data-backbtn="true">
-     <h1>Course 1</h1>
-     </div>
+<ul data-role="page" id="course1" data-backbtn="true">
+	 <div data-role="header" align="center">
+    <span><h3><img src="img/logo2.png" width="40" height="40" />Course 1</h3></span>
+  </div>
 	<div data-role="content">
 		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
    	    <li data-role="list-divider" data-backbtn="true"><h1>Name - Game Date</h1></li>
@@ -90,8 +90,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
@@ -99,10 +99,10 @@
 
 </ul>
 
-<ul data-role="page" id="course2">
-	 <div data-role="header" data-backbtn="true">
-     <h1>Course 2</h1>
-     </div>
+<ul data-role="page" id="course2" data-backbtn="true">
+	 <div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Course 2</h3>
+  </div>
      
      <div data-role="content">
 		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
@@ -118,8 +118,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
@@ -127,10 +127,10 @@
 
 </ul>
 
-<ul data-role="page" id="course3">
-	 <div data-role="header" data-backbtn="true">
-     <h1>Course 3</h1>
-     </div>
+<ul data-role="page" id="course3" data-backbtn="true">
+	 <div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Course 3</h3>
+  </div>
      
      <div data-role="content">
 		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
@@ -146,8 +146,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
@@ -155,10 +155,10 @@
 
 </ul>
 
-<ul data-role="page" id="course4">
-	 <div data-role="header" data-backbtn="true">
-     <h1>Course 4</h1>
-     </div>
+<ul data-role="page" id="course4" data-backbtn="true">
+	 <div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Course 4</h3>
+  </div>
      
      <div data-role="content">
 		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
@@ -174,8 +174,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
@@ -183,10 +183,10 @@
 
 </ul>
 
-<ul data-role="page" id="course5">
-	 <div data-role="header" data-backbtn="true">
-     <h1>Course 5</h1>
-     </div>
+<ul data-role="page" id="course5" data-backbtn="true">
+	 <div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Course 5</h3>
+  </div>
      
 	<div data-role="content">
 		<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
@@ -202,8 +202,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
@@ -211,10 +211,10 @@
 
 </ul>
 
-<ul data-role="page" id="newsStream">
-	<div data-role="header" data-backbtn="true">
-		<h1>Upcoming Tee Times</h1>
-	</div>
+<ul data-role="page" id="newsStream" data-backbtn="true">
+	 <div data-role="header" align="center">
+    <h3><img src="img/logo2.png" width="40" height="40" />Upcoming Tee Times</h3>
+  </div>
     
     <div data-role="content">
     	<ul data-role="listview" id="oneWindowList" data-inset="false" data-filter="true">
@@ -230,8 +230,8 @@
     <div data-role="navbar">
 		<ul>
 			<li><a href="index.html" class="ui-btn-active" data-ajax="false">Home</a></li>
-			<li><a href="http://rdittmer.github.com/MIU-Week3/Gold/index.html" data-ajax="false">Gold App</a></li>
-            <li><a href="http://rdittmer.github.com/MIU-Week3/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
+					<li><a href="http://rdittmer.github.com/MIU-Week4/Gold/index.html" data-ajax="false">Gold App</a></li>
+        	    <li><a href="http://rdittmer.github.com/MIU-Week4/Bronze/index.html" data-ajax="false">Gh-Pages</a></li>
 		</ul>
 	</div>
 
