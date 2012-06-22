@@ -1,0 +1,11 @@
+.ui-page {
+	background: url(img/bg1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+    
+}
+.ui-content{
+    
+}
